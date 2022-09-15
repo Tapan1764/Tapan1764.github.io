@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+    <form id="user-form">
         <div class="div">
         <table>
             <tr>
@@ -59,6 +59,9 @@
         const email = document.getElementById('email');
         email.addEventListener("input", () => validate(email));
 
+        const dob = document.getElementById('dob');
+        dob.addEventListener("input", () => age(dob));
+
         const submit = document.getElementById('submit');
         submit.addEventListener("click", () => validate(email));
 
@@ -70,6 +73,17 @@
                 element.setCustomValidity('');
             }
         }
+
+        function age(birthday) { 
+            if(birthday.validity.typeMismatch){
+                birthday.setCustomValidity("Age must be between 18 to 55 only");
+                birthday.reportValidity();
+            }
+            else{
+                birthday.setCustomValidity('');
+            }
+        }
     </script>
+    <script src="./index.js"></script>
 </body>
 </html>
