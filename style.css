@@ -1,0 +1,59 @@
+body {
+    background-image: url("https://cdn.glitch.global/e360bfa1-40ca-463b-9684-3b7b2ce345cb/2.jpg?v=1663036775576");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div {
+    border-image: url("https://cdn.glitch.global/e360bfa1-40ca-463b-9684-3b7b2ce345cb/1.jpg?v=1663036774336");
+    position: static;
+    margin: auto;
+    width: 350px;
+    height: auto;
+}
+#full_name {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#dob {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#password {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#email {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#address {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+tr {
+    text-align: center;
+}
+table {
+    border: 0px;
+    background-color: gainsboro;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+#submit {
+    width: auto;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 150%;
+}

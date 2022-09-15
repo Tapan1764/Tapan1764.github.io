@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="div">
+        <table>
+            <tr>
+                <td><label for="fname">Full name:</label></td>
+                <td><input type="text" id="full_name" name="full_name" placeholder="abc xyz" required></td>
+            </tr>
+            <tr>
+                <br>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="abc@gmail.com" required></td>
+            </tr>
+            <tr>
+                <br>
+            </tr>
+            <tr>
+                <td><label for="password">Passsword:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="password" required></td>
+            </tr>
+            <tr>
+                <br>
+            </tr>
+            <tr>
+                <td><label for="dateofbirth">Date Of Birth:</label></td>
+                <td><input type="date" id="dob" name="dateofbirth" required></td>
+            </tr>
+            <tr>
+                <br>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="tac" id="tac" required></td>
+                <td><label for="tac">I agree all the Terms and Conditions</label></td>
+            </tr>
+            <tr>
+                <br>
+            </tr>
+            <tr>
+                <td><button type="submit" id="submit">Submit</button></td>
+            </tr>
+            <tr>
+                <br>
+            </tr>
+            <tr>
+                <br>
+            </tr>
+        </table>
+    </div>
+    </form>
+
+    <script>
+        const email = document.getElementById('email');
+        email.addEventListener("input", () => validate(email));
+
+        const submit = document.getElementById('submit');
+        submit.addEventListener("click", () => validate(email));
+
+        function validate(element){
+            if(element.validity.typeMismatch){
+                element.setCustomValidity("The Email is not in the right format!");
+                element.reportValidity();
+            }else{
+                element.setCustomValidity('');
+            }
+        }
+    </script>
+</body>
+</html>
