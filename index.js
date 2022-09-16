@@ -28,7 +28,7 @@ const table =` <table class='table-auto w-full border'>
     <th class='px-4 py-2 border'>Email </th>
     <th class='px-4 py-2 border'>Password </th>
     <th class='px-4 py-2 border'>Dob </th>
-    <th class='px-4 py-2 border'>T & C </th>
+    <th class='px-4 py-2 border'>Accepted terms? </th>
     </tr>${tableEntries}
 </table>`
 let details = document.getElementById('user-entries')
