@@ -17,9 +17,9 @@ const name= `<td class='border px-4 py-2'>${entry.FullName}</td>`;
 const email = `<td class='border px-4 py-2'>${entry.email}</td>`;
 const password = `<td class='border px-4 py-2'>${entry.password}</td>`;
 const dob = `<td class='border px-4 py-2'>${entry.dob}</td>`;
-const tac = `<td class='border px-4 py-2'>${entry.acceptTerms}</td>`;
+const acceptTerms = `<td class='border px-4 py-2'>${entry.acceptTerms}</td>`;
 
-const row = `<tr>${name} ${email} ${password} ${dob} ${tac}</tr>`;
+const row = `<tr>${name} ${email} ${password} ${dob} ${acceptTerms}</tr>`;
 return row;
 }).join("\n");
 const table =` <table class='table-auto w-full border'>
