@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
     <form id="user-form">
         <div class="div">
         <table>
@@ -54,36 +55,16 @@
         </table>
     </div>
     </form>
+</div>
 
-    <script>
-        const email = document.getElementById('email');
-        email.addEventListener("input", () => validate(email));
+<div>
+    <div>
+        <h2>Entries</h2>
+        <div id="user-entries"></div>
+    </div>
+</div>
 
-        const dob = document.getElementById('dob');
-        dob.addEventListener("input", () => age(dob));
 
-        const submit = document.getElementById('submit');
-        submit.addEventListener("click", () => validate(email));
-
-        function validate(element){
-            if(element.validity.typeMismatch){
-                element.setCustomValidity("The Email is not in the right format!");
-                element.reportValidity();
-            }else{
-                element.setCustomValidity('');
-            }
-        }
-
-        function age(birthday) { 
-            if(birthday.validity.typeMismatch){
-                birthday.setCustomValidity("Age must be between 18 to 55 only");
-                birthday.reportValidity();
-            }
-            else{
-                birthday.setCustomValidity('');
-            }
-        }
-    </script>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
